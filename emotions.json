@@ -1,0 +1,104 @@
+[
+    {
+        "emotion": "happy",
+        "music": [ 
+            {
+            "name": "I feel good",
+            "youtube": "https://www.youtube.com/watch?v=U-wZa6RZgQA"
+        }, 
+        {
+            "name": "You are my sunshine",
+            "youtube": "https://www.youtube.com/watch?v=5TUzB2fBUpY"
+        }
+        ],
+        "strategies": [
+"Spread your happiness by helping others (Comment on other posts)",
+"Share your happy experience by posting here"
+        ],
+        "test_links": [
+"https://www.psychologytoday.com/us/tests/health/happiness-test",
+"https://psychcentral.com/quizzes/happiness-test",
+"https://www.psychologytoday.com/us/tests/personality/emotional-intelligence-test",
+"https://ktestone.com/kapable.github.io/personalColorEng/"
+        ]
+    },
+    {
+        "emotion": "sad",
+        "music": [
+            {
+                "name": "What a wonderful world",
+                "youtube": "https://www.youtube.com/watch?v=A3yCcXgbKrE"
+            }, 
+            {
+                "name": "Smile",
+                "youtube": "https://www.youtube.com/watch?v=YXuB6md9zPk"
+            }
+        ],
+        "strategies": [
+"Share your sad experience with us (Help to release your sadness)",
+"Reinterpret a sad situation in a more positive way",
+"Take less sugar, more salmon, tuna, fruits and vegetables",
+"Think about the good qualities and strengths you have",
+"Engage in exercise (yoga, walks, cycling, swimming)",
+"Watching silly shows or comedies"
+        ],
+        "test_links": [
+"https://psychcentral.com/quizzes/depression-quiz",
+"https://psychologia.co/empathy-test/",
+"https://psyev.com/tests/seasonal-affective-disorder-test/",
+"https://psychcentral.com/quizzes/personality-quiz#1"
+        ]
+    },
+    {
+        "emotion": "angry",
+        "music": [
+            {
+                "name": "Don't look back in anger",
+                "youtube": "https://www.youtube.com/watch?v=jZO_6PyDJSU"
+            }, 
+            {
+                "name": "I am not angry anymore",
+                "youtube": "https://www.youtube.com/watch?v=OXDZI2NEcl4"
+            }
+        ],
+        "strategies": [
+            "Share your angry experience with us (Talk about your anger)",
+"Time out strategy: Move away to a place to calm down",
+"Practise Box Breathing Exercise: inhale while counting to 4, hold while counting to 4, exhale while counting to 4, hold while counting to 4",
+"Practise grounding strategies: run hands through cold water, humming, shake your wrists"
+        ],
+        "test_links": [
+"https://www.psychologytoday.com/us/tests/personality/anger-management-test",
+"https://psychcentral.com/quizzes/emotional-type-quiz#4",
+"https://psychologia.co/anger-test/",
+"https://psychcentral.com/quizzes/anger-issues-test"
+        ]
+    },
+    {
+        "emotion": "scared",
+        "music": [
+            {
+                "name": "Stand by me",
+                "youtube": "https://www.youtube.com/watch?v=7rZyI7kPZMI"
+                }, 
+                {
+                    "name": "Que sera sera",
+                    "youtube": "https://www.youtube.com/watch?v=CcWbZUgymkw"
+                }
+        ],
+        "strategies": [
+            "Share your scary experience with us (We support you)",
+"Identify your fear  (What is your fear?)",
+"Imagine what will happen if your fear comes true",
+"Research or find out information about what is worrying you",
+"Acknowledge your fear and visualize success",
+"Practise positive self-talk"
+        ],
+        "test_links": [
+"https://screening.mhanational.org/screening-tools/anxiety/",
+"https://lonerwolf.com/biggest-fear-test/",
+"https://www.healthyplace.com/psychological-tests/social-anxiety-social-phobia-test",
+"https://www.quizexpo.com/what-human-emotion-am-i-quiz/"
+        ]
+    }
+]
