@@ -30,7 +30,7 @@ public class EmailServiceImpl {
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper mimeMessageHelper;
 
-        String url = "https://feelings-server-production.up.railway.app/api/resetpassword/" + token;
+        String url = "https://feelings-server-production.up.railway.app" + "/resetpassword/" + token;
 
 
         String subject = "Here is the link to reset your password";
