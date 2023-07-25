@@ -17,9 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
 
 import sg.edu.nus.iss.Feelings.service.UserDetailsServiceImpl;
 import sg.edu.nus.iss.Feelings.utils.JwtAuthenticationEntryPoint;
@@ -28,7 +26,7 @@ import sg.edu.nus.iss.Feelings.utils.JwtAccessDeniedHandler;
 
 import static sg.edu.nus.iss.Feelings.utils.SecurityConstant.*;
 
-import java.util.Arrays;
+
 
 
 
@@ -68,15 +66,7 @@ public class WebSecurityConfig {
     return authConfig.getAuthenticationManager();
     }
   
-     @Bean
-    CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("https://feelings-client-u9gohuf7k-irene-lee-livecomsg.vercel.app"));
-        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "OPTIONS"));
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
-        return source;
-    }
+   
     
 
     @Bean 
