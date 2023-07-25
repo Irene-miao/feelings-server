@@ -57,7 +57,7 @@ import static sg.edu.nus.iss.Feelings.utils.SecurityConstant.*;
 
 
 @RestController
-@RequestMapping(path="/api")
+@RequestMapping
 @CrossOrigin(origins="https://feelings-client-u9gohuf7k-irene-lee-livecomsg.vercel.app", maxAge = 3600, allowCredentials = "true")
 public class FeelingsController {
     
