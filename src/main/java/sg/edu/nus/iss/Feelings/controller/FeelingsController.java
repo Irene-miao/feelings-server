@@ -60,6 +60,7 @@ import static sg.edu.nus.iss.Feelings.utils.SecurityConstant.*;
 
 @RestController
 @RequestMapping
+@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
 public class FeelingsController {
     
     private FeelingsService feelingsSvc;
@@ -78,6 +79,7 @@ public class FeelingsController {
 
 
     @GetMapping(path="/emotion/{label}")
+@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<String> getEmotion(@PathVariable String label) {
 
         String emotion = "";
@@ -102,6 +104,7 @@ public class FeelingsController {
     }
 
     @PostMapping(path="/register", consumes=MediaType.MULTIPART_FORM_DATA_VALUE)
+@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<String> register(@RequestPart MultipartFile avatar_img, @RequestPart String username, @RequestPart String email, @RequestPart String password) {
         
        String error = "Register user %s failure" + username;
@@ -127,6 +130,7 @@ public class FeelingsController {
 
 
     @PostMapping(path="/login", consumes=MediaType.APPLICATION_JSON_VALUE)
+	@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<String> login(@RequestBody User user) {
 
         
@@ -163,6 +167,7 @@ HttpHeaders jwtHeader = null;
 
     
     @PostMapping(path="/logout")
+	@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<?> logout(){
         JsonObject obj = Json.createObjectBuilder()
         .add("message", "You have been signed out").build();
@@ -175,6 +180,7 @@ HttpHeaders jwtHeader = null;
     }
 
     @PostMapping(path="/post")
+	@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<String> createPost(@RequestBody String post) {
         
         
@@ -207,6 +213,7 @@ HttpHeaders jwtHeader = null;
     }
 
     @GetMapping(path="/posts")
+	@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<String> getPosts(@RequestParam(required=false) Integer limit, @RequestParam(required=false) Integer offset){
 
         Integer defaultLimit = limit != null ? limit : 5;
@@ -241,6 +248,7 @@ HttpHeaders jwtHeader = null;
     }
 
      @GetMapping(path="/images")
+	@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<String> getImages() {
 
         JsonArrayBuilder arr = Json.createArrayBuilder();
@@ -275,6 +283,7 @@ HttpHeaders jwtHeader = null;
     }
 
     @DeleteMapping(path="/posts/{postId}")
+	@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<String> deletePost(@PathVariable String postId){
 
         Long deleteCount = null;
@@ -290,6 +299,7 @@ HttpHeaders jwtHeader = null;
     }
 
     @DeleteMapping(path="/users/{username}")
+	@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<String> deleteUser(@PathVariable String username){
 
        
@@ -311,6 +321,7 @@ HttpHeaders jwtHeader = null;
     }
 
     @PostMapping(path="/forgot")
+	@CrossOrigin(origins="https://feelings-client.vercel.app", maxAge = 3600, allowCredentials = "true")
     public ResponseEntity<String> sendEmail(@RequestBody String json){
 
         JsonReader r = Json.createReader(new StringReader(json));
